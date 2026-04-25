@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Deletion — CoreCash™</title>
+<style>
+  :root {
+    --cc-navy-dark: #0a1929;
+    --cc-navy: #132f4c;
+    --cc-gold: #d4a017;
+    --text: #1a1a1a;
+    --text-muted: #555;
+    --bg: #fafafa;
+    --card-bg: #ffffff;
+    --border: #e5e5e5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: var(--cc-navy-dark);
+    color: var(--cc-gold);
+    padding: 1.25rem 1.5rem;
+    border-bottom: 4px solid var(--cc-gold);
+  }
+  header .brand {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 0.25rem;
+    color: var(--cc-navy-dark);
+  }
+  .last-updated {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-left: 4px solid var(--cc-gold);
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .summary strong { color: var(--cc-navy-dark); }
+  h2 {
+    color: var(--cc-navy-dark);
+    margin-top: 2.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 {
+    color: var(--cc-navy);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  ul, ol { padding-left: 1.4rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--cc-navy); text-decoration: underline; }
+  a:hover { color: var(--cc-gold); }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #f0f0f0;
+    color: var(--cc-navy-dark);
+    font-weight: 600;
+  }
+  .path-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .path-card h3 { margin-top: 0; }
+  footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">CoreCash™ by Building Irrelevance</div>
+</header>
+<main>
+
+<h1>Data Deletion</h1>
+<p class="last-updated">Last Updated: April 25, 2026</p>
+
+<div class="summary">
+  <strong>The short version:</strong> CoreCash does not require you to create an account. You can delete all of your data at any time, either from inside the app or by emailing us. This page explains how.
+</div>
+
+<h2>What data does CoreCash hold?</h2>
+<p>CoreCash collects the minimum information needed to operate the app. There is no name, email, address, or payment information attached to your records. The data we hold is:</p>
+<ul>
+  <li><strong>On your device:</strong> the core deposit records you create, your notification preferences, and the receipt photos you save.</li>
+  <li><strong>On our servers:</strong> an anonymous App User ID created by our billing partner, plus your scan counts, entitlement state (Free / Pro Unlock / Shop Plan), and short-lived rate-limit records. None of this is linked to your name or contact information.</li>
+</ul>
+<p>For the full data inventory, see our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+
+<h2>How to delete your data</h2>
+
+<div class="path-card">
+  <h3>Option 1 — If you still have the app installed (recommended)</h3>
+  <p>This is the fastest and most complete option. It works without any contact with us.</p>
+  <ol>
+    <li>Open CoreCash on your Android device.</li>
+    <li>Tap the gear icon (<strong>⚙️</strong>) in the top-right corner to open Settings.</li>
+    <li>Scroll to <strong>"Delete My Data"</strong> and tap it.</li>
+    <li>Confirm when prompted.</li>
+  </ol>
+  <p>This action wipes your server-side scan counts, entitlement state, and rate-limit records, and clears all local data on your device. It takes effect immediately.</p>
+  <p>After deleting, you can either keep using the app (it will reset to a fresh Free Trial) or uninstall it.</p>
+</div>
+
+<div class="path-card">
+  <h3>Option 2 — If you have already uninstalled the app</h3>
+  <p>If you uninstalled CoreCash, all data that was stored on your device is already gone. To delete the records still held on our servers, email us:</p>
+  <p>
+    <strong>Email:</strong> <a href="mailto:buildingirrelevance@gmail.com?subject=CoreCash%20Data%20Deletion%20Request">buildingirrelevance@gmail.com</a><br>
+    <strong>Subject line:</strong> CoreCash Data Deletion Request
+  </p>
+  <p>Because CoreCash uses an anonymous identifier (not an email or username), we need one of the following so we can locate the right records:</p>
+  <ul>
+    <li><strong>Your App User ID</strong> if you wrote it down before uninstalling. It was visible on the Settings screen.</li>
+    <li><strong>OR a Google Play order number</strong> from any CoreCash purchase you made. (Find it at <a href="https://play.google.com/store/account/orderhistory" target="_blank" rel="noopener">play.google.com/store/account/orderhistory</a>.)</li>
+  </ul>
+  <p>We will confirm the deletion within 30 days, and in most cases within 7 business days.</p>
+</div>
+
+<h2>What gets deleted</h2>
+<table>
+  <thead>
+    <tr><th>Data</th><th>Deleted by Option 1</th><th>Deleted by Option 2</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Local core records and preferences on your device</td>
+      <td>Yes (immediately)</td>
+      <td>Already gone when you uninstalled</td>
+    </tr>
+    <tr>
+      <td>Server-side entitlement state and scan counts (Firestore)</td>
+      <td>Yes (immediately)</td>
+      <td>Yes (within 30 days)</td>
+    </tr>
+    <tr>
+      <td>Server-side rate-limit records</td>
+      <td>Yes (auto-expire within 24 hours)</td>
+      <td>Yes (auto-expire within 24 hours)</td>
+    </tr>
+    <tr>
+      <td>Cloud Function server logs</td>
+      <td>Auto-deleted within 30 days</td>
+      <td>Auto-deleted within 30 days</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>What we cannot delete</h2>
+<p>The following records are held by third parties under their own retention policies. We do not have the technical ability to delete them on your behalf, and in some cases law requires they be kept:</p>
+<ul>
+  <li><strong>Google Play purchase history.</strong> Required for refund processing and tax records. Managed by Google. You can review your order history at <a href="https://play.google.com/store/account/orderhistory" target="_blank" rel="noopener">play.google.com/store/account/orderhistory</a>.</li>
+  <li><strong>RevenueCat subscription transaction history.</strong> Required for tax and accounting records. Subject to RevenueCat's own <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">privacy policy</a>.</li>
+</ul>
+<p>These records are anonymous to us — they are linked only to your App User ID and Google Play account, never to your name or other personal information.</p>
+
+<h2>If you have additional questions</h2>
+<p>You may also contact us by mail or email for any privacy-related question:</p>
+<p>
+  <strong>Building Irrelevance</strong><br>
+  PO Box 195<br>
+  Dothan, AL 36302<br>
+  United States<br>
+  Email: <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a>
+</p>
+
+</main>
+<footer>
+  © 2026 Building Irrelevance. CoreCash™. All rights reserved.<br>
+  <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms-and-conditions.html">Terms and Conditions</a>
+</footer>
+</body>
+</html>
