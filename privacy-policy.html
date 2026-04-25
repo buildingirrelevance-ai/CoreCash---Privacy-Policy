@@ -1,145 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy — CoreCash™</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 15px;
-      color: #444;
-      background: #ffffff;
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.8;
-    }
-    .brand {
-      display: block;
-      font-size: 20px;
-      font-weight: bold;
-      color: #1a3a5c;
-      margin-bottom: 24px;
-    }
-    h1 { font-size: 26px; color: #000; margin-bottom: 4px; }
-    .date { color: #888; font-size: 14px; margin-bottom: 28px; display: block; }
-    h2 {
-      font-size: 17px;
-      color: #000;
-      margin-top: 32px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 4px;
-    }
-    p { margin-bottom: 12px; }
-    ul { margin: 8px 0 12px 22px; }
-    ul li { margin-bottom: 6px; }
-    a { color: #1a3a5c; }
-    .highlight {
-      background: #f5f8ff;
-      border-left: 4px solid #1a3a5c;
-      padding: 14px 18px;
-      margin: 20px 0;
-      border-radius: 0 6px 6px 0;
-    }
-    footer {
-      margin-top: 48px;
-      padding-top: 16px;
-      border-top: 1px solid #eee;
-      font-size: 13px;
-      color: #999;
-      text-align: center;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — CoreCash™</title>
+<style>
+  :root {
+    --cc-navy-dark: #0a1929;
+    --cc-navy: #132f4c;
+    --cc-gold: #d4a017;
+    --text: #1a1a1a;
+    --text-muted: #555;
+    --bg: #fafafa;
+    --card-bg: #ffffff;
+    --border: #e5e5e5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: var(--cc-navy-dark);
+    color: var(--cc-gold);
+    padding: 1.25rem 1.5rem;
+    border-bottom: 4px solid var(--cc-gold);
+  }
+  header .brand {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 0.25rem;
+    color: var(--cc-navy-dark);
+  }
+  .last-updated {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-left: 4px solid var(--cc-gold);
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .summary strong { color: var(--cc-navy-dark); }
+  h2 {
+    color: var(--cc-navy-dark);
+    margin-top: 2.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 {
+    color: var(--cc-navy);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  ul { padding-left: 1.4rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--cc-navy); text-decoration: underline; }
+  a:hover { color: var(--cc-gold); }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #f0f0f0;
+    color: var(--cc-navy-dark);
+    font-weight: 600;
+  }
+  footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+</style>
 </head>
 <body>
+<header>
+  <div class="brand">CoreCash™ by Building Irrelevance</div>
+</header>
+<main>
 
-  <span class="brand">CoreCash™ by Building Irrelevance</span>
-  <h1>Privacy Policy</h1>
-  <span class="date">Last Updated: April 13, 2026</span>
+<h1>Privacy Policy</h1>
+<p class="last-updated">Last Updated: April 25, 2026</p>
 
-  <div class="highlight">
-    <strong>The short version:</strong> CoreCash stores all your data locally on your device. We never sell your data. The only information that leaves your device is receipt photos sent to our AI provider for scanning — and those are not stored permanently. That's it.
-  </div>
+<div class="summary">
+  <strong>The short version:</strong> CoreCash is a US-only app for tracking auto-parts core deposits. We collect the minimum information needed to operate the app — no name, no email, no address, no payment data. The data we do collect is either stored on your device or kept on our servers tied only to an anonymous app identifier. We never sell your data and we never use it for advertising. You can delete your data any time from inside the app or by contacting us.
+</div>
 
-  <h2>1. Who We Are</h2>
-  <p>CoreCash™ is a mobile app developed by <strong>Building Irrelevance</strong>, based in Dothan, Alabama. CoreCash helps auto mechanics and DIY car enthusiasts track core deposit return deadlines by scanning parts store receipts using AI.</p>
-  <p>Questions? Contact us: <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a></p>
+<h2>1. Who We Are</h2>
+<p>CoreCash™ is a mobile app developed by <strong>Building Irrelevance</strong>, based in Dothan, Alabama, United States. CoreCash helps auto mechanics and DIY car enthusiasts track core deposit return deadlines by scanning parts-store receipts using AI.</p>
+<p>This app is intended for use only in the United States. It is distributed on the Google Play Store with a US-only geographic restriction.</p>
+<p>Questions or privacy requests: <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a></p>
 
-  <h2>2. What Information We Collect</h2>
-  <p>CoreCash collects only what is necessary to provide the service:</p>
-  <ul>
-    <li><strong>Receipt images</strong> — When you use the AI scanner, the photo you choose is sent to our AI provider (Anthropic) to extract core charge information. The image is processed and immediately discarded — it is not stored permanently by us or by Anthropic.</li>
-    <li><strong>Core deposit data you enter</strong> — Part names, store names, dollar amounts, and return dates that you enter manually or that are extracted from your receipt. This data is stored locally on your device only.</li>
-    <li><strong>App preferences</strong> — Your notification settings. Stored locally on your device only.</li>
-  </ul>
-  <p><strong>We do not collect:</strong> your name, email address, phone number, location, payment information, or any account credentials. CoreCash has no user accounts and no login.</p>
+<h2>2. What Information We Collect</h2>
 
-  <h2>3. How We Use Your Information</h2>
-  <ul>
-    <li><strong>Receipt scanning:</strong> Receipt images are sent to the Anthropic Claude API to extract core charge amounts, store names, part names, and return deadlines. Results are returned to your device and the image is discarded.</li>
-    <li><strong>Deadline reminders:</strong> If you enable notifications, CoreCash uses the return dates you entered to schedule local push notifications on your device. These are generated entirely on your device — no data is sent to any server to trigger them.</li>
-    <li><strong>App functionality:</strong> Your locally stored core deposit data is used solely to display information within the app.</li>
-  </ul>
+<h3>2.1 Information stored on your device</h3>
+<ul>
+  <li><strong>Core deposit records</strong> you create — part name, store name, dollar amount, return date, photo of the receipt, and notes. Stored locally using Android's app-preferences storage and included in Android Auto Backup if you have it enabled in your Google account settings.</li>
+  <li><strong>App preferences</strong> — your notification settings and local app state.</li>
+</ul>
 
-  <h2>4. How We Share Your Information</h2>
-  <p>We do not sell, rent, or trade your personal information. The only third party that receives any data is:</p>
-  <ul>
-    <li><strong>Anthropic (Claude API)</strong> — Receipt images are transmitted over encrypted HTTPS to Anthropic's API for processing. Anthropic does not permanently store these images. You can review Anthropic's privacy policy at <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a>.</li>
-  </ul>
+<h3>2.2 Information stored on our servers</h3>
+<p>To enforce purchase entitlements, prevent abuse, and operate paid features, we store the following on Google Cloud servers (Firebase Firestore, US region):</p>
+<ul>
+  <li><strong>Anonymous App User ID</strong> — a randomly generated identifier created by our billing partner (RevenueCat) when you first open the app. It is not linked to your name, email, phone number, or any other personal identifier.</li>
+  <li><strong>Entitlement state</strong> — what tier you are on (Free, Pro Unlock, or Shop Plan), how many free-tier cores you have created, how many AI scans you have used, your remaining bundled-scan balance, and your current Shop Plan cycle counters.</li>
+  <li><strong>Rate-limit records</strong> — short-lived counters of recent requests from your device, used to throttle abuse.</li>
+  <li><strong>Cloud Function logs</strong> — server-side request logs that may include your App User ID for debugging and security monitoring. These are auto-deleted after 30 days.</li>
+</ul>
 
-  <h2>5. Data Storage and Retention</h2>
-  <p>All core deposit records, notification preferences, and scan counts are stored locally on your device. We do not operate a server or database that holds your data.</p>
-  <p>Your data is retained on your device until you delete individual records within the app or uninstall the app. Uninstalling CoreCash removes all locally stored data.</p>
+<h3>2.3 Information transmitted but not stored by us</h3>
+<ul>
+  <li><strong>Receipt images</strong> — when you use the AI scanner, the receipt photo is transmitted from your device through our servers to Anthropic's Claude API for text extraction. The image is held in memory only for the duration of the scan and is not written to permanent storage by us or by Anthropic.</li>
+  <li><strong>Device attestation tokens</strong> — when you take an action that costs an entitlement (such as scanning a receipt or saving a core), your device generates a Play Integrity token that is sent to our servers and to Google for fraud verification. The token is verified and discarded; it is not stored.</li>
+</ul>
 
-  <h2>6. How We Keep Your Information Safe</h2>
-  <ul>
-    <li>All data stays on your device — no external database exists</li>
-    <li>Receipt images are transmitted to Anthropic over encrypted HTTPS only</li>
-    <li>No user accounts or passwords to compromise</li>
-    <li>No server-side storage means no server-side breach risk</li>
-  </ul>
+<h3>2.4 Information we do NOT collect</h3>
+<ul>
+  <li>Your name, email address, phone number, or mailing address</li>
+  <li>Your location or GPS data</li>
+  <li>Your payment card information (Google Play handles all billing)</li>
+  <li>Account passwords or login credentials (CoreCash has no user accounts)</li>
+  <li>Advertising identifiers</li>
+  <li>Browsing or behavioral data</li>
+  <li>Contacts, photos other than receipts you choose, or messages</li>
+</ul>
 
-  <h2>7. Device Permissions</h2>
-  <ul>
-    <li><strong>Camera / Storage:</strong> Required to photograph or upload receipt images for AI scanning. You may revoke this at any time in your device settings — manual entry still works without it.</li>
-    <li><strong>Notifications:</strong> Required to send deadline reminders. You may disable notifications at any time in your device settings or within the CoreCash Settings screen.</li>
-  </ul>
+<h2>3. How We Use Your Information</h2>
+<ul>
+  <li><strong>Receipt scanning:</strong> When you tap "Take Photo" or "Upload from Gallery," the receipt image is sent to our backend, which forwards it to Anthropic's Claude API. The API returns extracted text (store name, part name, dollar amounts, return date) which is sent back to your device for you to review and save.</li>
+  <li><strong>Entitlement enforcement:</strong> Before each scan or core save, your device sends your App User ID and a Play Integrity token to our backend. Our backend checks your tier, scan balance, and rate-limit status and either allows the action or returns a paywall response.</li>
+  <li><strong>Deadline reminders:</strong> If you enable notifications, return dates you save trigger local push notifications generated entirely on your device. No data is sent to any server to schedule these.</li>
+  <li><strong>Abuse prevention:</strong> Rate-limit records and Play Integrity tokens are used solely to detect and block automated abuse of the AI scanning service.</li>
+  <li><strong>Service operation:</strong> Anonymous App User IDs allow us to honor your purchases across reinstalls and (for Shop Plans) across multiple devices.</li>
+</ul>
 
-  <h2>8. Children's Privacy</h2>
-  <p>CoreCash is intended for users 18 and older. We do not knowingly collect information from anyone under 18. If you believe a minor has used the app, contact us at <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a>.</p>
+<h2>4. Service Providers and Subprocessors</h2>
+<p>We do not sell, rent, share, or trade your information for marketing or advertising purposes. The third parties listed below process limited data on our behalf solely to operate the app. None of them receive your name, email, or other personally identifying information from us.</p>
 
-  <h2>9. Your Privacy Rights</h2>
-  <p>Because all data is stored on your device, you have direct control at all times:</p>
-  <ul>
-    <li>Delete any core record using the three-dot menu (⋮) on any card</li>
-    <li>Delete all data by uninstalling the app</li>
-    <li>Revoke camera access in your device settings</li>
-    <li>Disable notifications in your device settings or in the CoreCash Settings screen</li>
-  </ul>
-  <p>Residents of California, Colorado, Connecticut, Texas, Virginia, and other states with enacted privacy laws may have additional rights including the right to know, access, correct, or delete personal data. Since we hold no server-side data about you, most of these rights are automatically satisfied by your local device control. For any requests, contact us at <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a>.</p>
+<table>
+  <thead>
+    <tr><th>Provider</th><th>Purpose</th><th>Data Received</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Google Cloud / Firebase</strong><br><a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank" rel="noopener">Privacy Notice</a></td>
+      <td>Hosts our backend servers (Cloud Functions and Firestore database) in the United States.</td>
+      <td>App User ID, entitlement state, rate-limit records, server logs.</td>
+    </tr>
+    <tr>
+      <td><strong>Anthropic, PBC</strong><br><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Privacy Policy</a></td>
+      <td>Performs AI text extraction on receipt images you scan.</td>
+      <td>Receipt image (in memory during the scan only). Anthropic does not retain the image or use it to train models, per their commercial API terms.</td>
+    </tr>
+    <tr>
+      <td><strong>RevenueCat, Inc.</strong><br><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">Privacy Policy</a></td>
+      <td>Manages subscriptions, entitlements, and the SCAN virtual currency for Top-Up purchases.</td>
+      <td>App User ID, subscription status, purchase history, virtual-currency balance.</td>
+    </tr>
+    <tr>
+      <td><strong>Google Play (Google LLC)</strong><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></td>
+      <td>Processes all in-app purchases and provides Play Integrity device attestation.</td>
+      <td>Your Google Play purchase data and device attestation tokens. CoreCash never sees your payment card information.</td>
+    </tr>
+  </tbody>
+</table>
 
-  <h2>10. California "Shine the Light" Law</h2>
-  <p>We do not share personal information with third parties for direct marketing purposes. California residents may contact us to confirm this at <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a>.</p>
+<h2>5. Data Storage, Location, and Retention</h2>
 
-  <h2>11. Do Not Track</h2>
-  <p>CoreCash does not track your browsing activity, use advertising identifiers, or respond to Do-Not-Track signals. No behavioral or advertising tracking of any kind occurs within this app.</p>
+<h3>5.1 Where data is stored</h3>
+<p>All servers and data storage operated by us are located in the United States (Google Cloud <code>us-central1</code> region). RevenueCat operates in the United States. Anthropic processes API requests on US-based infrastructure.</p>
 
-  <h2>12. Updates to This Policy</h2>
-  <p>We may update this Privacy Policy when we add new features or as required by law. Updates will be noted by a revised date at the top of this page and communicated through app update release notes on Google Play.</p>
+<h3>5.2 How long we keep data</h3>
+<table>
+  <thead>
+    <tr><th>Data</th><th>Retention</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Local core records and preferences on your device</td>
+      <td>Until you delete them in the app or uninstall</td>
+    </tr>
+    <tr>
+      <td>Entitlement state in Firestore</td>
+      <td>Kept while your account is active. Deleted within 30 days after a deletion request, or automatically purged after 24 months of inactivity.</td>
+    </tr>
+    <tr>
+      <td>Rate-limit records</td>
+      <td>Auto-expire within 24 hours.</td>
+    </tr>
+    <tr>
+      <td>Cloud Function server logs</td>
+      <td>Auto-deleted after 30 days.</td>
+    </tr>
+    <tr>
+      <td>RevenueCat subscription / purchase history</td>
+      <td>Retained by RevenueCat per their own retention policy. Required by tax and accounting law for transaction records.</td>
+    </tr>
+    <tr>
+      <td>Google Play purchase history</td>
+      <td>Retained by Google per their policy. Required for refund processing and tax records.</td>
+    </tr>
+  </tbody>
+</table>
 
-  <h2>13. Contact Us</h2>
-  <p>
-    <strong>Building Irrelevance</strong><br>
-    Dothan, Alabama, United States<br>
-    Email: <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a>
-  </p>
+<h2>6. How We Keep Your Information Safe</h2>
+<ul>
+  <li>All network traffic between your device, our servers, and our subprocessors is encrypted using HTTPS (TLS).</li>
+  <li>API keys for our subprocessors are stored in Google Cloud Secret Manager and are never shipped in the app.</li>
+  <li>Server-side data is keyed only by the anonymous App User ID. There is no name, email, or other personal identifier attached.</li>
+  <li>We use Google Play Integrity attestation to verify that requests come from a legitimate, unmodified copy of the app on a real Android device.</li>
+  <li>We follow least-privilege access controls within Google Cloud and require multi-factor authentication for all administrative access.</li>
+</ul>
+<p>No system is perfectly secure. If we ever discover a security breach affecting your data, we will notify affected users through the app and/or via Google Play update notes as soon as reasonably possible.</p>
 
-  <footer>
-    <p>© 2026 Building Irrelevance. CoreCash™. All rights reserved.</p>
-  </footer>
+<h2>7. Device Permissions</h2>
+<ul>
+  <li><strong>Camera:</strong> Required only if you choose to take a new photo of a receipt for AI scanning. You may revoke camera access in your device settings at any time — manual entry of cores still works without it.</li>
+  <li><strong>Photos / Gallery:</strong> CoreCash does not request broad photo library access. When you tap "Upload from Gallery," Android's system Photo Picker opens and lets you choose a single image to share with the app. We never see other photos in your library.</li>
+  <li><strong>Notifications:</strong> Optional. Required only to send local return-deadline reminders. You may disable notifications at any time in your device settings or in the CoreCash Settings screen.</li>
+  <li><strong>Internet:</strong> Required to perform AI scans, validate purchases, and check entitlements. Manual core entry works offline; scans and purchases do not.</li>
+</ul>
 
+<h2>8. Children's Privacy</h2>
+<p>CoreCash is intended for users 18 years and older and is not directed at children. We do not knowingly collect any information from anyone under 18. We are compliant with the Children's Online Privacy Protection Act (COPPA), which prohibits collection of information from children under 13 without parental consent. If you believe a minor has used the app or that we have inadvertently collected information from a minor, contact us at <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a> and we will delete the relevant records.</p>
+
+<h2>9. Your Privacy Rights (US State Laws)</h2>
+<p>Residents of California, Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, and Virginia have specific privacy rights under their state's privacy laws. We extend these rights to all CoreCash users regardless of their state of residence. You have the right to:</p>
+<ul>
+  <li><strong>Know</strong> what information we collect about you and how we use it (this Privacy Policy provides that disclosure)</li>
+  <li><strong>Access</strong> the information we have about you</li>
+  <li><strong>Correct</strong> inaccurate information</li>
+  <li><strong>Delete</strong> the information we have about you</li>
+  <li><strong>Opt out of sale or sharing</strong> of your personal information for cross-context behavioral advertising — we do not sell or share, but you have the right regardless</li>
+  <li><strong>Limit the use of sensitive personal information</strong> — we do not collect sensitive personal information as defined by California law</li>
+  <li><strong>Non-discrimination</strong> — we will not deny you service, charge you a different price, or provide you a different level of quality for exercising your rights</li>
+  <li><strong>Appeal</strong> any denial of these rights by replying to our denial notice</li>
+</ul>
+
+<h3>9.1 How to exercise these rights</h3>
+<ul>
+  <li><strong>Delete your data from inside the app:</strong> Open CoreCash → Settings → "Delete My Data" → confirm. This wipes your server-side entitlement records, scan counts, and rate-limit records. Local data on your device is also cleared.</li>
+  <li><strong>Delete your data after uninstalling:</strong> Visit our <a href="delete-account.html">Data Deletion page</a> for instructions.</li>
+  <li><strong>Access, correct, or appeal:</strong> Email <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a> with the subject line "Privacy Request." Because CoreCash uses anonymous identifiers, you will need to provide your App User ID (visible in Settings) or a Google Play order number from any CoreCash purchase so we can locate your records. We will respond within 45 days.</li>
+</ul>
+
+<h3>9.2 Authorized agents</h3>
+<p>You may designate an authorized agent to make a privacy request on your behalf. We will require written authorization from you and verification of the agent's identity before acting on the request.</p>
+
+<h2>10. California-Specific Disclosures</h2>
+
+<h3>10.1 Categories of personal information collected</h3>
+<p>In the past 12 months, we have collected the following categories of personal information as defined by the California Consumer Privacy Act (CCPA):</p>
+<ul>
+  <li><strong>Identifiers:</strong> Anonymous App User ID. Not linked to name, email, IP address, or government identifier.</li>
+  <li><strong>Commercial information:</strong> Records of in-app purchases (which tier, when purchased) maintained by our billing processors.</li>
+  <li><strong>Internet or other electronic network activity information:</strong> Server request logs, rate-limit counters.</li>
+  <li><strong>Inferences:</strong> None.</li>
+</ul>
+
+<h3>10.2 Categories disclosed to third parties for a business purpose</h3>
+<p>We share the categories above with the service providers listed in Section 4, solely for the business purposes described there.</p>
+
+<h3>10.3 Sources of personal information</h3>
+<p>All personal information is collected directly from you when you use the app or make a purchase. We do not purchase or acquire personal information from data brokers or other third parties.</p>
+
+<h3>10.4 Sale or sharing of personal information</h3>
+<p><strong>We do not and will not sell your personal information.</strong> We do not share your personal information for cross-context behavioral advertising. We have not done so in the past 12 months.</p>
+
+<h3>10.5 Sensitive personal information</h3>
+<p>We do not collect sensitive personal information as defined by California law (such as Social Security numbers, financial account access credentials, precise geolocation, racial or ethnic origin, religious beliefs, biometric identifiers, or health information).</p>
+
+<h3>10.6 California "Shine the Light" Law</h3>
+<p>California Civil Code §1798.83 entitles California residents to request once per calendar year a disclosure of the personal information shared with third parties for those parties' direct marketing purposes. We do not share personal information with third parties for direct marketing purposes. California residents may confirm this by emailing <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a>.</p>
+
+<h2>11. Do Not Track and Global Privacy Control</h2>
+<p>CoreCash is a mobile app and does not respond to web-browser Do Not Track signals or Global Privacy Control signals because we do not perform any tracking, profiling, advertising, or sale of personal information that those signals are designed to opt out of.</p>
+
+<h2>12. Updates to This Policy</h2>
+<p>We may update this Privacy Policy when we add new features, change our subprocessors, or when required by law. Updates will be noted by a revised date at the top of this page. Material changes will additionally be communicated through release notes on the Google Play store listing.</p>
+
+<h2>13. Contact Us</h2>
+<p>
+  <strong>Building Irrelevance</strong><br>
+  Dothan, Alabama, United States<br>
+  Email: <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a>
+</p>
+
+</main>
+<footer>
+  © 2026 Building Irrelevance. CoreCash™. All rights reserved.<br>
+  <a href="terms-and-conditions.html">Terms and Conditions</a> &nbsp;·&nbsp; <a href="delete-account.html">Data Deletion</a>
+</footer>
 </body>
 </html>
