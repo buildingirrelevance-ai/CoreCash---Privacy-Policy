@@ -1,165 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Terms and Conditions — CoreCash™</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 15px;
-      color: #444;
-      background: #ffffff;
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.8;
-    }
-    .brand {
-      display: block;
-      font-size: 20px;
-      font-weight: bold;
-      color: #1a3a5c;
-      margin-bottom: 24px;
-    }
-    h1 { font-size: 26px; color: #000; margin-bottom: 4px; }
-    .date { color: #888; font-size: 14px; margin-bottom: 28px; display: block; }
-    h2 {
-      font-size: 17px;
-      color: #000;
-      margin-top: 32px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 4px;
-    }
-    p { margin-bottom: 12px; }
-    ul { margin: 8px 0 12px 22px; }
-    ul li { margin-bottom: 6px; }
-    a { color: #1a3a5c; }
-    .highlight {
-      background: #fff8f0;
-      border-left: 4px solid #C9A84C;
-      padding: 14px 18px;
-      margin: 20px 0;
-      border-radius: 0 6px 6px 0;
-    }
-    .warning {
-      background: #fff5f5;
-      border-left: 4px solid #cc0000;
-      padding: 14px 18px;
-      margin: 20px 0;
-      border-radius: 0 6px 6px 0;
-      font-weight: bold;
-    }
-    footer {
-      margin-top: 48px;
-      padding-top: 16px;
-      border-top: 1px solid #eee;
-      font-size: 13px;
-      color: #999;
-      text-align: center;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms and Conditions — CoreCash™</title>
+<style>
+  :root {
+    --cc-navy-dark: #0a1929;
+    --cc-navy: #132f4c;
+    --cc-gold: #d4a017;
+    --text: #1a1a1a;
+    --text-muted: #555;
+    --bg: #fafafa;
+    --card-bg: #ffffff;
+    --border: #e5e5e5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: var(--cc-navy-dark);
+    color: var(--cc-gold);
+    padding: 1.25rem 1.5rem;
+    border-bottom: 4px solid var(--cc-gold);
+  }
+  header .brand {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 0.25rem;
+    color: var(--cc-navy-dark);
+  }
+  .last-updated {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .summary {
+    background: var(--card-bg);
+    border-left: 4px solid var(--cc-gold);
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .summary strong { color: var(--cc-navy-dark); }
+  h2 {
+    color: var(--cc-navy-dark);
+    margin-top: 2.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+  h3 {
+    color: var(--cc-navy);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  ul { padding-left: 1.4rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--cc-navy); text-decoration: underline; }
+  a:hover { color: var(--cc-gold); }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #f0f0f0;
+    color: var(--cc-navy-dark);
+    font-weight: 600;
+  }
+  .important {
+    background: #fff8e1;
+    border-left: 4px solid var(--cc-gold);
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+  }
+  footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+</style>
 </head>
 <body>
+<header>
+  <div class="brand">CoreCash™ by Building Irrelevance</div>
+</header>
+<main>
 
-  <span class="brand">CoreCash™ by Building Irrelevance</span>
-  <h1>Terms and Conditions</h1>
-  <span class="date">Last Updated: April 18, 2026</span>
+<h1>Terms and Conditions</h1>
+<p class="last-updated">Last Updated: April 25, 2026</p>
 
-  <p>These Terms and Conditions ("Terms") govern your use of the CoreCash™ mobile application ("App") developed by Building Irrelevance ("we," "us," or "our"). By downloading or using CoreCash™, you agree to these Terms. If you do not agree, do not use the App.</p>
+<div class="summary">
+  These Terms govern your use of the CoreCash™ mobile application ("App") developed by <strong>Building Irrelevance</strong> ("we," "us," or "our"). The App is distributed only in the United States. By downloading or using CoreCash™, you agree to these Terms. If you do not agree, do not use the App.
+</div>
 
-  <h2>1. What CoreCash Does</h2>
-  <p>CoreCash™ is a mobile utility app that helps auto mechanics and DIY car enthusiasts track core deposit return deadlines for auto parts purchases. The App allows you to:</p>
-  <ul>
-    <li>Photograph parts store receipts for AI-powered core charge extraction</li>
-    <li>Manually enter core deposit information</li>
-    <li>Set and receive deadline reminder notifications</li>
-    <li>Track which cores have been returned and calculate money recovered</li>
-  </ul>
-
-  <div class="warning">
-    IMPORTANT: CoreCash™ is not responsible for missed core return deadlines. You are solely responsible for verifying and entering accurate return dates. CoreCash™ provides receipt scanning and reminder services only and makes no guarantee that dates extracted from receipts are accurate. Always verify your return deadline directly with your receipt or by contacting the store.
-  </div>
-
-  <h2>2. Eligibility</h2>
-  <p>You must be at least 18 years old to use CoreCash™. By using the App, you confirm that you meet this requirement.</p>
-
-  <h2>3. Purchasing and Usage Credits</h2>
-<p>CoreCash™ is a paid app. Your purchase of $9.99 through Google Play grants you 5,000 usage credits. Additional credits are available for purchase in 5,000-credit increments at $9.99 each. <strong>Price and quantity per purchase are subject to change with reasonable advance notice.</strong></p>
-<p><strong>What counts as one usage credit:</strong></p>
-<p>Each of the following actions counts as one (1) usage credit:</p>
+<h2>1. What CoreCash Does</h2>
+<p>CoreCash™ is a mobile utility app that helps auto mechanics and DIY car enthusiasts track core deposit return deadlines for auto-parts purchases. The App lets you:</p>
 <ul>
-  <li>Successfully scanning a receipt using the device camera</li>
-  <li>Successfully uploading and scanning a receipt photo from your device gallery</li>
-  <li>Manually saving a core deposit entry</li>
+  <li>Photograph parts-store receipts for AI-powered core charge extraction</li>
+  <li>Manually enter core deposit information</li>
+  <li>Set and receive deadline reminder notifications</li>
+  <li>Track which cores have been returned and calculate money recovered</li>
 </ul>
-<p>To prevent double-charging, if you successfully scan a receipt and then save the core deposit, only one (1) credit is used — not two.</p>
-<p><strong>Other terms:</strong></p>
+<p>CoreCash offers a free trial and several paid tiers (one-time purchases and monthly/annual subscriptions). Full pricing details are in Section 3.</p>
+
+<div class="important">
+  <strong>Important:</strong> CoreCash™ is not responsible for missed core return deadlines. You are solely responsible for verifying and entering accurate return dates. CoreCash provides receipt scanning and reminder services only and makes no guarantee that information extracted from receipts is accurate. Always verify your return deadline directly with your receipt or by contacting the store.
+</div>
+
+<h2>2. Eligibility</h2>
+<p>You must be at least 18 years old and a resident of the United States to use CoreCash™. By using the App, you confirm that you meet both requirements. The App is distributed exclusively in the United States via the Google Play Store.</p>
+
+<h2>3. Pricing, Plans, and Purchases</h2>
+
+<h3>3.1 Plan summary</h3>
+<table>
+  <thead>
+    <tr><th>Plan</th><th>Price</th><th>Type</th><th>What you get</th><th>Devices</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Free Trial</strong></td>
+      <td>Free</td>
+      <td>Default</td>
+      <td>3 cores total, of which 1 may be AI-scanned</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Top-Up 100</strong></td>
+      <td>$4.99</td>
+      <td>One-time consumable</td>
+      <td>Adds 100 to your scan balance. Removes the 3-core free-tier cap.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Top-Up 500</strong></td>
+      <td>$19.99</td>
+      <td>One-time consumable</td>
+      <td>Adds 500 to your scan balance. Removes the 3-core free-tier cap.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Pro Unlock</strong></td>
+      <td>$19.99</td>
+      <td>One-time non-consumable</td>
+      <td>Unlimited manual core entries forever, plus 200 bundled AI scans.</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><strong>Shop Plan — 3 seats (Monthly)</strong></td>
+      <td>$9.99 / month</td>
+      <td>Auto-renewing subscription</td>
+      <td>Unlimited manual core entries, plus 300 AI scans per monthly billing cycle (fair use).</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><strong>Shop Plan — 3 seats (Annual)</strong></td>
+      <td>$79.99 / year</td>
+      <td>Auto-renewing subscription</td>
+      <td>Unlimited manual core entries, plus 300 AI scans per monthly cycle (fair use).</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><strong>Shop Plan — 10 seats (Monthly)</strong></td>
+      <td>$24.99 / month</td>
+      <td>Auto-renewing subscription</td>
+      <td>Unlimited manual core entries, plus 1,000 AI scans per monthly billing cycle (fair use).</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td><strong>Shop Plan — 10 seats (Annual)</strong></td>
+      <td>$199.99 / year</td>
+      <td>Auto-renewing subscription</td>
+      <td>Unlimited manual core entries, plus 1,000 AI scans per monthly cycle (fair use).</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>3.2 How AI scans are counted</h3>
 <ul>
-  <li>Unused credits do not expire</li>
-  <li>Usage credits are tied to your Google Play purchase and device</li>
-  <li>All sales are final — no refunds will be issued</li>
-  <li>We reserve the right to adjust pricing and credit quantity for future purchases with reasonable advance notice</li>
+  <li><strong>Free Trial:</strong> You may create up to 3 cores total, of which a maximum of 1 may use AI scanning. Both AI scans and manual entries count toward the 3-core limit.</li>
+  <li><strong>Top-Up only (no Pro Unlock or Shop Plan):</strong> Each core you create — whether by AI scan or manual entry — deducts 1 from your scan balance. Buying any Top-Up removes the free-tier 3-core cap.</li>
+  <li><strong>Pro Unlock:</strong> Manual entries are unlimited and do not deduct anything. AI scans deduct 1 from your bundled 200-scan balance. After the bundled 200 are used, AI scans deduct from any Top-Up balance you have purchased.</li>
+  <li><strong>Shop Plans:</strong> Manual entries are unlimited and do not deduct anything. AI scans deduct 1 from your current cycle allowance (300 or 1,000 depending on tier). If you hit your monthly cap, additional AI scans deduct from any Top-Up balance you have purchased; manual entry remains unlimited.</li>
 </ul>
-<p>Payments are processed entirely by Google Play. We do not handle, store, or have access to your payment information.</p>
-  <h2>4. AI Receipt Scanning</h2>
-  <p>The receipt scanning feature uses the Anthropic Claude AI API to extract information from receipt images. By using this feature, you acknowledge that:</p>
-  <ul>
-    <li>AI extraction is not guaranteed to be 100% accurate</li>
-    <li>You are responsible for verifying all extracted information before saving</li>
-    <li>Receipt images are transmitted to Anthropic over encrypted HTTPS and are not permanently stored</li>
-    <li>You must not upload images that contain illegal content or violate the rights of others</li>
-    <li>You must not use the scanning feature in any way that violates Anthropic's usage policies</li>
-  </ul>
 
-  <h2>5. Your Responsibilities</h2>
-  <p>By using CoreCash™, you agree to:</p>
-  <ul>
-    <li>Enter accurate return dates — you confirm every date before saving</li>
-    <li>Verify AI-extracted information against your physical receipt</li>
-    <li>Contact your parts store directly if you are unsure of your return deadline</li>
-    <li>Use the App only for its intended purpose of tracking core deposits</li>
-    <li>Not attempt to reverse engineer, decompile, or modify the App</li>
-    <li>Not use the App for any illegal or unauthorized purpose</li>
-  </ul>
+<h3>3.3 Top-Up balance behavior</h3>
+<p>Top-Up purchases add a permanent balance to your account that survives:</p>
+<ul>
+  <li>Subscription cancellation</li>
+  <li>Subscription plan changes (upgrade or downgrade)</li>
+  <li>Subscription expiration or non-renewal</li>
+  <li>App reinstall on the same Google Play account</li>
+</ul>
+<p>Top-Up balance is reduced only by AI scans (when you have a Pro Unlock or active Shop Plan) or by any core creation (when you have no other paid entitlement). Top-Up balance is never reduced by manual entry under Pro Unlock or Shop Plan, since manual entry is already unlimited under those plans. Top-Up balance does not expire.</p>
 
-  <h2>6. Core Return Deadline Disclaimer</h2>
-  <div class="highlight">
-    CoreCash™ provides deadline tracking and reminder tools only. We are not responsible for any missed core return deadlines, lost deposits, or financial losses arising from the use of this App. Return policies vary by store and part type. Always confirm your return deadline directly with the store where you purchased the part. The responsibility for returning cores on time rests entirely with the user.
-  </div>
+<h3>3.4 Device limits</h3>
+<p>Each plan permits the App to be used on a limited number of devices, as shown in the table in Section 3.1. We may verify device counts using a device identifier created by the App on first install. We reserve the right to limit access from devices in excess of your plan's allowance and to provide a "Manage Devices" feature in the App for you to remove devices you no longer use.</p>
 
-  <h2>7. Intellectual Property</h2>
-  <p>CoreCash™, the CoreCash name, logo, and all app content are owned by Building Irrelevance. You are granted a limited, non-exclusive, non-transferable license to use the App on your personal device. You may not copy, reproduce, distribute, or create derivative works from the App or its content without our written permission.</p>
+<h3>3.5 Subscription auto-renewal and cancellation</h3>
+<p>Shop Plan subscriptions automatically renew at the end of each billing period (monthly or annual) at the then-current price unless you cancel at least 24 hours before the renewal date. Renewals are processed by Google Play.</p>
+<ul>
+  <li><strong>To cancel:</strong> Open the Google Play Store app → tap your profile icon → Payments &amp; subscriptions → Subscriptions → CoreCash → Cancel subscription. You may also cancel at <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">play.google.com/store/account/subscriptions</a>.</li>
+  <li>Cancellation takes effect at the end of the current paid period. You retain access through the end of that period.</li>
+  <li>After cancellation, your account reverts to the Free Trial tier limits — but any Top-Up balance you have purchased remains on your account and can still be used.</li>
+</ul>
 
-  <h2>8. Privacy</h2>
-  <p>Your use of CoreCash™ is also governed by our Privacy Policy, available at: <a href="https://buildingirrelevance-ai.github.io/CoreCash---Privacy-Policy/privacy-policy.html" target="_blank">Privacy Policy</a>. By using the App, you agree to the terms of our Privacy Policy.</p>
+<h3>3.6 Refunds</h3>
+<ul>
+  <li><strong>One-time purchases (Pro Unlock, Top-Up 100, Top-Up 500):</strong> All sales final. Refund requests must be made directly to Google Play under their refund policy.</li>
+  <li><strong>Subscriptions (Shop Plans):</strong> Cancel any time through Google Play. We do not issue prorated refunds for the unused portion of a billing period; access continues until the period ends.</li>
+  <li>Google Play handles all refund decisions. We do not have access to your payment information and cannot issue refunds directly.</li>
+</ul>
 
-  <h2>9. Disclaimers and Limitation of Liability</h2>
-  <p>CoreCash™ is provided "as is" without any warranties, express or implied. We make no warranty that the App will be error-free, uninterrupted, or that AI extraction will always be accurate.</p>
-  <p>To the fullest extent permitted by law, Building Irrelevance shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App, including but not limited to missed core return deadlines, lost deposits, or financial losses. Our total liability to you for any claim shall not exceed the amount you paid for the App ($9.99).</p>
+<h3>3.7 Pricing changes</h3>
+<p>Prices and quantities for any tier are subject to change with reasonable advance notice. Notice will be given through the Google Play store listing and through release notes in the App. Existing one-time purchases (Pro Unlock and Top-Up balances) are not affected by future price changes. For subscriptions, Google Play will notify you of any price increase before it takes effect at your next renewal, and you may cancel before that renewal if you do not wish to continue.</p>
 
-  <h2>10. Updates to the App and These Terms</h2>
-  <p>We may update the App and these Terms from time to time. Updates to the App will be distributed through Google Play. Updates to these Terms will be noted by a revised date at the top of this page and communicated through app update release notes. Your continued use of the App after an update constitutes acceptance of the revised Terms.</p>
+<h3>3.8 Payment processing</h3>
+<p>Payments are processed entirely by Google Play. We do not handle, store, or have access to your payment card information.</p>
 
-  <h2>11. Termination</h2>
-  <p>We reserve the right to discontinue the App or any of its features at any time. If the App is discontinued, your purchased scan credits will no longer be usable, but no refunds will be issued for unused credits as all sales are final.</p>
+<h2>4. AI Receipt Scanning</h2>
+<p>The receipt scanning feature transmits your receipt image from your device to our backend (hosted on Google Cloud), which forwards the image to Anthropic's Claude API for text extraction. By using this feature, you acknowledge that:</p>
+<ul>
+  <li>AI extraction is not guaranteed to be 100% accurate. You are responsible for verifying all extracted information before saving.</li>
+  <li>Receipt images are transmitted over encrypted HTTPS and are not permanently stored by us or by Anthropic.</li>
+  <li>You must not upload images that contain illegal content, depict minors, or violate the rights of others.</li>
+  <li>You must not use the scanning feature in any way that violates Anthropic's <a href="https://www.anthropic.com/legal/aup" target="_blank" rel="noopener">Usage Policies</a>.</li>
+  <li>The scanning service depends on the availability of third-party APIs. We do not guarantee uninterrupted access.</li>
+</ul>
 
-  <h2>12. Governing Law and Dispute Resolution</h2>
-  <p>These Terms are governed by the laws of the State of Alabama. Any disputes arising from these Terms or your use of the App shall first be attempted to be resolved through informal negotiation for a period of 30 days. If informal resolution fails, disputes shall be resolved by binding arbitration in Alabama under the rules of the American Arbitration Association. We will cover arbitration fees if they are deemed excessive. You waive any right to a jury trial or class action proceeding.</p>
+<h2>5. Anti-Abuse and Device Verification</h2>
+<p>To protect the AI scanning service from automated abuse and to enforce purchase entitlements fairly, the App uses Google Play Integrity to verify that requests come from a legitimate, unmodified copy of CoreCash on a real Android device. We also rate-limit requests from each device. By using the App, you agree to participate in these checks. We may deny service to any device that fails verification or that exceeds reasonable usage rates, including for users on the Free Trial and any paid tier.</p>
 
-  <h2>13. Contact Us</h2>
-  <p>If you have questions about these Terms, contact us at:</p>
-  <p>
-    <strong>Building Irrelevance</strong><br>
-    Dothan, Alabama, United States<br>
-    Email: <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a>
-  </p>
+<h2>6. Your Responsibilities</h2>
+<p>By using CoreCash™, you agree to:</p>
+<ul>
+  <li>Enter accurate return dates and verify every date before saving</li>
+  <li>Verify AI-extracted information against your physical receipt</li>
+  <li>Contact your parts store directly if you are unsure of your return deadline</li>
+  <li>Use the App only for its intended purpose of tracking core deposits</li>
+  <li>Not attempt to reverse engineer, decompile, modify, or tamper with the App or its backend</li>
+  <li>Not attempt to bypass entitlement enforcement, device limits, or rate limits</li>
+  <li>Not use the App for any illegal or unauthorized purpose</li>
+  <li>Not upload receipts that do not belong to you or that contain content that is not a parts-store receipt</li>
+</ul>
 
-  <footer>
-    <p>© 2026 Building Irrelevance. CoreCash™. All rights reserved.</p>
-  </footer>
+<h2>7. Core Return Deadline Disclaimer</h2>
+<p>CoreCash™ provides deadline tracking and reminder tools only. We are not responsible for any missed core return deadlines, lost deposits, or financial losses arising from the use of this App. Return policies vary by store and part type. Always confirm your return deadline directly with the store where you purchased the part. The responsibility for returning cores on time rests entirely with you.</p>
 
+<h2>8. Intellectual Property</h2>
+<p>CoreCash™, the CoreCash name, the Building Irrelevance name, and all App content, design, and code are owned by Building Irrelevance. You are granted a limited, non-exclusive, non-transferable license to use the App on devices within your plan's allowance. You may not copy, reproduce, distribute, modify, or create derivative works from the App or its content without our written permission.</p>
+
+<h2>9. Privacy and Data Deletion</h2>
+<p>Your use of CoreCash™ is also governed by our <a href="privacy-policy.html">Privacy Policy</a>. By using the App, you agree to the terms of our Privacy Policy.</p>
+<p>You may delete your data at any time:</p>
+<ul>
+  <li><strong>From inside the App:</strong> Settings → "Delete My Data" → confirm. This wipes server-side records and clears local data.</li>
+  <li><strong>After uninstalling:</strong> Visit our <a href="delete-account.html">Data Deletion page</a> for instructions.</li>
+</ul>
+
+<h2>10. Disclaimers and Limitation of Liability</h2>
+<p>CoreCash™ is provided "AS IS" and "AS AVAILABLE," without warranties of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy, or non-infringement. We make no warranty that the App will be error-free, uninterrupted, secure, or that AI extraction will always be accurate.</p>
+<p>To the fullest extent permitted by applicable law, Building Irrelevance, its owners, employees, and contractors shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to missed core return deadlines, lost deposits, lost profits, lost data, or financial losses, arising from or related to your use of the App, even if we have been advised of the possibility of such damages.</p>
+<p>Some jurisdictions do not allow the exclusion of certain warranties or the limitation of liability for incidental or consequential damages. In such jurisdictions, our liability is limited to the greatest extent permitted by law.</p>
+
+<h2>11. Updates to the App and These Terms</h2>
+<p>We may update the App and these Terms from time to time. Updates to the App will be distributed through Google Play. Updates to these Terms will be noted by a revised date at the top of this page and communicated through release notes in the App. Your continued use of the App after an update constitutes acceptance of the revised Terms. If a change to these Terms is material, we will provide additional notice in the App before the change takes effect.</p>
+
+<h2>12. Termination</h2>
+<p>We reserve the right to suspend or terminate your access to CoreCash™ at any time if you violate these Terms or use the App in a way that we reasonably believe is fraudulent or harmful.</p>
+<p>We also reserve the right to discontinue the App or any of its features at any time. If we permanently discontinue the App:</p>
+<ul>
+  <li>Active subscriptions will be cancelled and Google Play will issue prorated refunds for the unused portion of the current billing period in accordance with Google's refund policy.</li>
+  <li>One-time purchases (Pro Unlock, Top-Up balances) are not refundable, as those products were delivered at purchase.</li>
+  <li>We will provide reasonable advance notice through the Google Play store listing and through the App.</li>
+</ul>
+<p>You may stop using the App at any time by uninstalling it. Uninstalling does not automatically delete server-side records — to delete those, follow the instructions in Section 9.</p>
+
+<h2>13. Governing Law and Dispute Resolution</h2>
+<p>These Terms are governed by the laws of the State of Alabama, without regard to its conflict-of-laws principles. Any disputes arising from these Terms or your use of the App shall first be addressed through informal negotiation by contacting us at the address in Section 14 for a period of 30 days.</p>
+<p>If informal resolution fails, disputes shall be resolved by binding individual arbitration in Alabama under the Consumer Arbitration Rules of the American Arbitration Association. We will cover arbitration filing fees that exceed what you would have paid to file in small-claims court. You waive any right to a jury trial and any right to participate in a class action, class arbitration, or representative proceeding.</p>
+<p>Notwithstanding the above, either party may bring an individual action in small-claims court for disputes within that court's jurisdiction.</p>
+
+<h2>14. Contact Us</h2>
+<p>If you have questions about these Terms, contact us at:</p>
+<p>
+  <strong>Building Irrelevance</strong><br>
+  PO Box 195<br>
+  Dothan, AL 36302<br>
+  United States<br>
+  Email: <a href="mailto:buildingirrelevance@gmail.com">buildingirrelevance@gmail.com</a>
+</p>
+
+</main>
+<footer>
+  © 2026 Building Irrelevance. CoreCash™. All rights reserved.<br>
+  <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="delete-account.html">Data Deletion</a>
+</footer>
 </body>
 </html>
